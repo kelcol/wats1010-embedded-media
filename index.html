@@ -8,7 +8,7 @@
         <meta name="description" content="Monkaa is a blue-furred, pink-faced monkey who consumes a crystallized meteorite, making him invincibly strong and too hot to handle. Watch and download the animated short film here--for free!">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='https://fonts.googleapis.com/css?family=Alike Angular' rel='stylesheet'>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <!-- TODO: Make a favicon that better represents the page. -->
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="stylesheet" href="css/main.css">
@@ -24,6 +24,7 @@
                  insert backgrounds and other images into the page. Balance
                  image quality with file size to achieve the best user
                  experience. -->
+        <div id="header-wrapper">
             <h1>Monkaa</h1>
             <p class="subtitle">An open source short film</p>
             <nav>
@@ -33,37 +34,20 @@
                     <li><a href="index.html#about">About</a></li>
                 </ul>
             </nav>
-        </header>
-
-
-        <aside id="social">
-            <!-- TODO: Experiment with different ways of making this set of
-                 share links stand out and stay near the user all the time.
-                 Try using 'absolute', 'fixed', or even 'sticky' positioning
-                 to achieve a user-friendly effect. You may also use the
-                 `:hover` pseudoselector to trigger height or width changes
-                 that could help you make a more interactive design. -->
-            <h2>Share</h2>
-            <ul class="social-buttons">
-                <li class="social-buttons__item">
-                    <i class="material-icons">cloud</i>
-                    <a class="social-buttons__item-link social-buttons__twitter" href="http://twitter.com">Twitter</a>
-                    
-                </li>
-                <li class="social-buttons__item">
-                    <i class="material-icons">cake</i>
-                    <a class="social-buttons__item-link social-buttons__facebook" href="http://facebook.com">Facebook</a>
-                </li>
-                <li class="social-buttons__item">
-                    <i class="material-icons">mood</i>
-                    <a class="social-buttons__item-link social-buttons__instagram" href="http://instagram.com">Instagram</a>
-                <li>
-            </ul>
+        </div>
             
             
+    <aside id="social">
+        <h2>Share</h2>
+        <ul class="fa social-links" >
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+         </ul>
+  </aside>
             
             
-        </aside>
+</header>
 
 <!--- Watch Section - START ---->                 
 
@@ -80,8 +64,7 @@
                 preload
                 controls
                 loop>
-            <p>blah blah</p>
-                
+      
             </video>
             
 
@@ -106,18 +89,18 @@
             
             <audio 
                 src="/media/audio/monkaa_soundtrack.mp3"
-                poster="/img/monkaa_bluemonkey.png"
                 width="50%" height="auto"
                 preload
                 controls
                 loop>
-                
+            </audio>
             
-
-
-            <!-- TODO: Style an elegant download link to download the video. -->
+          <h3>Download the audio</h3>
             <p>
-                <a class="download-button" href="media/audio/monkaa_soundtrack.mp3">Download as MP3</a>
+                Click below to download either MPG or OGG versions of this audio.
+                <br>
+                <a class="download-button" href="/media/audio/monkaa_soundtrack.mp3">.MP3 Version</a>
+                <a class="download-button" href="/media/audio/monkaa_soundtrack.ogg">OGG Version</a>
             </p>
         </section>
 
@@ -139,23 +122,23 @@
                      each headshot below. Images are located in the
                      ``img/weybec/`` directory. -->
                 <li>
-                    <img class="headshot" src="img/weybec/pratik_solanki.gif" alt="Pratik Solanki headshot"><br>
+                    <img class="headshot" src="img/weybec/pratik_solanki.jpg" alt="Pratik Solanki headshot"><br>
                     Pratik Solanki<br>
                     Co-Founder
                 </li>
                 <li>
-                    <img class="headshot" src="img/weybec/Nita-ravalji1.gif" alt="Nita Ravalji headshot"><br>
+                    <img class="headshot" src="img/weybec/Nita-ravalji1.jpg" alt="Nita Ravalji headshot"><br>
                     Nita Ravalji<br>
                     Co-Founder
                 </li>
                 <li>
-                    <img class="headshot" src="img/weybec/niyal_parmar.gif" alt="Niyal Parmar headshot"><br>
+                    <img class="headshot" src="img/weybec/niyal_parmar.jpg" alt="Niyal Parmar headshot"><br>
                     Niyal Parmar<br>
                     Co-Founder
                 </li>
             </ul>
 
-            <p>Monkaa is produced by <a href="http://www.weybec.com/">Weybec</a>, an animation studio located in Mumbai, India and founded by Pratik Solanki, Nita Ravalji and Niyal Parmar.</p>
+            ::<p>Monkaa is produced by <a href="http://www.weybec.com/">Weybec</a>, an animation studio located in Mumbai, India and founded by Pratik Solanki, Nita Ravalji and Niyal Parmar.</p>
 
             <p>Project Monkaa is a 5-minute short animated movie, entirely made with Blender and GIMP and other Free/Open Software programs. It has been released as an Open Movie, with all production files and tutorials available on <a href="https://cloud.blender.org/open-movie/monkaa/">Blender Cloud</a> under a CC-BY license, as well as on a DVD available in the <a href="http://www.blender3d.org/e-shop/">Blender Store</a>.</p>
         </section>

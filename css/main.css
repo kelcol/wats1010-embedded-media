@@ -1,35 +1,28 @@
-******************************************************************************
+/******************************************************************************
  * WATS1010: Introduction to Web Development
  * Embedded Media Assignment
  *
  * Site Styles
- *****************************************************************************
-
-
-
-
-
-
+ *****************************************************************************/
 
  html {
      padding: 0;
  }
  
  body {
-  margin: 0;
+  margin: 0 ;
   padding: 0;
-  font-family: 'Alike Angular';
-  font-size: 12px;
+  font-family: 'Alike Angular', sans-serif;
   }
 
 section {
- height: 100vh;
  width: 100%;
  margin: 0 auto;
  list-style: none;
  display: inline-block;
  text-align: center;
 }
+
 
 li {
  margin: 0 auto;
@@ -38,16 +31,18 @@ li {
  text-align: center;
 }
 
-
-/* Headers - START */
-
 h1 {
- font-size: 32px;
- color: #B1D13F;
+ color: #376813;
+ font-size: 500%;
+  text-align: center;
+ font-variant: small-caps;
+ font-weight: bold;
 }
 
+
 h2 {
- font-size: 26px;
+ color: #F15D44;
+ font-size: 400%;
  text-align: center;
 }
 
@@ -56,53 +51,118 @@ h2 {
 @-webkit-keyframes wiggle{0%{-webkit-transform:rotate(3deg);}50%{-webkit-transform:rotate(-3deg);}100%{-webkit-transform:rotate(3deg);}}
 @keyframes wiggle{0%{transform:rotate(3deg);}50%{transform:rotate(-3deg);}100%{transform:rotate(3deg);}}
 
-h2:hover{
+h1:hover, 
+h2:hover, 
+h3:hover {
  -ms-animation:wiggle .3s 2;-moz-animation:wiggle .3s 2;-webkit-animation:wiggle .3s 2;animation:wiggle .3s 2;
 }
 
-h3 {
- font-size: 18px;
-}
 
-h3:hover{
- -ms-animation:wiggle .3s 2;-moz-animation:wiggle .3s 2;-webkit-animation:wiggle .3s 2;animation:wiggle .3s 2;
-}
+/* HEADER - Main Nav and Social - START */
 
 header {
  min-height: 400px;
- background-image: url('../img/official_header.jpg');
+ background-image: url('../img/monkey_crystal_tail.png');
  background-repeat: no-repeat;
  background-position: center;
  background-size: cover;
 }
 
+#header-wrapper {
+ top: 1rem;
+ left: 1rem;
+ z-index: 100;
+ position: fixed;
+ background-color: #83D7DF;
+ width: 20%;
+}
 
-nav {
-  postition: fixed;
+#social {
+ top: 1rem;
+ right: 1rem;
+ z-index: 100;
+ width: 20%;
+ position: fixed;
+ background-color: #83D7DF;
+ 
+}
+
+.main-nav, 
+.social-links {
+  line-height: 2rem;
+  z-index: 100;
+  margin: auto;
+  background-color: orange;  
+}
+
+.main-nav li, 
+.social-links li {
+    display: inline-block;
+    background-color:#13A4DB;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: .75rem;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.main-nav li:hover, 
+.social-links li:hover {
+    background-color: #ACDCB0;
+}
+
+.subtitle {
+  margin: 0;
+  color:red;
+  text-align: center;
+  font-size: 120%;
 }
 
 
-/* Headers - END */
+.fa {
+ font-size: 3rem;
+}
+
+/* Main Nav and Social - END */
 
 
 
 
 
-/* Navigation Bars - START */
 
-.main-nav {
-  top: 0;
+
+/* Footer and Bottom Nav - START */
+
+footer {
+ display: inline-block;
+ width: 100%;
+}
+
+footer > nav {
+ bottom: 0;
   z-index: 100;
   position: fixed;
   width: 100%;
-  background-color: #B1D13F;
+  background-color: transparent;
+}
+
+footer p {
+  color: red;
+  text-align: center;
 }
 
 
-nav li {
+.bottom-nav {
+bottom: 1rem;
+ left: 1rem;
+ z-index: 100;
+ width: 20%;
+ position: fixed;
+   margin: auto;
+  background-color: orange;  
+}
+.bottom-nav li {
     display: inline-block;
     background-color:#13A4DB;
-    color: red;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -110,16 +170,10 @@ nav li {
     margin: 4px 2px;
     cursor: pointer;
 }
-
-
-.bottom-nav {
-  bottom: 0;
-  z-index: 100;
-  position: fixed;
-  width: 100%;
-  background-color: #B1D13F;
-  
+.bottom-nav li:hover {
+    background-color: #ACDCB0;
 }
+
 
 
 /* Navigation Bars - END */
@@ -132,14 +186,14 @@ nav li {
 /* WATCH SECTION - START */
 
 #watch {
- width: 100%;
- margin: auto;
+ height: 100vh;
  background-color: yellow;
 }
 
 video {
-
+  margin: 0 33rem 0 33rem;
 }
+
 
 /* WATCH SECTION - END */
 
@@ -147,17 +201,19 @@ video {
 
 
 
+
+
 /* Listen Section - START */
+
 #listen {
+ height: 50vh;
  background-color: purple;
+
+ 
 }
 
-audio {
-  vertical-align: middle;
-}
 
 /* Listen Section - END */
-
 
 
 
@@ -168,6 +224,31 @@ audio {
 
 #about {
  background-color: #F2D2DC;
+  height: 100vh;
+  font-size:1rem;
+}
+
+
+
+#about p {
+ color: darkblue;
+ margin: 0 33rem 0 33rem;
+ background-color: yellowgreen;
+}
+
+
+
+.lead {
+ font-size: 3rem;
+ padding-bottom: 1rem;
+}
+
+
+
+.weybec-people img {
+ padding: 2rem;
+ width: 16rem;
+ height: auto;
 }
 
 /* About Section - END */
@@ -177,60 +258,13 @@ audio {
 
 
 
-
-
-
-
 /* Social Links - START */
 
-.material-icons {
- display: inline-block;
+aside {
+ top: 1rem;
+ right: 1rem;
+ z-index: 100;
+ position: fixed;
+ width: 25%;
+ background-color: burlywood;
 }
-
- .social-buttons {
-font-size : 0.625em;
-letter-spacing : 0.09em;
-line-height : 0;
-list-style-type : none;
-padding-left : 0;
-}
-.social-buttons__item {
- -ms-animation:wiggle .3s 2;-moz-animation:wiggle .3s 2;-webkit-animation:wiggle .3s 2;animation:wiggle .3s 2;
-transition : color 0.1s, background-color 0.1s, fill 0.1s;
-background-color : #18AAD9;
-color : #ffffff;
-display : inline-block;
-margin : 2px 0;
-max-width : 100%;
-overflow : hidden;
-text-overflow : ellipsis;
-white-space : nowrap;
-}
-.social-buttons__item:hover {
-background-color : #F8B092;
-color : #ffffff;
-}
-.social-buttons__item-link {
-color : currentColor;
-display : block;
-padding : 8px;
-text-transform : uppercase;
-width : 100%;
-overflow : hidden;
-text-overflow : ellipsis;
-}
-
-.social-buttons__text {
-margin-left : 5px;
-margin-top : 1px;
-vertical-align : middle;
-} 
-
-/* Social Links - START */
-
-
-
-
-
-
-
