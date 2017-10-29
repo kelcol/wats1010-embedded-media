@@ -7,12 +7,14 @@
 
  html {
      padding: 0;
+     background-color: #F1C773;
  }
  
  body {
   margin: 0 ;
   padding: 0;
   font-family: 'Alike Angular', sans-serif;
+  color: #4980B9;
   }
 
 section {
@@ -31,19 +33,30 @@ li {
  text-align: center;
 }
 
+
 h1 {
- color: #376813;
- font-size: 500%;
-  text-align: center;
+ color: #E3501D;
+ background-color: transparent;
+ font-size: 675%;
+ text-align: center;
  font-variant: small-caps;
  font-weight: bold;
+ text-shadow: -1px 0 #7CE27E, 0 1px #7CE27E, 1px 0 #C99BA1, 0 -1px #7CE27E;
+ margin: 0 auto;
+ padding: 0;
 }
 
 
 h2 {
- color: #F15D44;
- font-size: 400%;
+ color: #E3501D;
+ font-size: 300%;
  text-align: center;
+}
+
+
+h3 {
+ color: #D85A42;
+  text-align: center;
 }
 
 @-ms-keyframes wiggle{0%{-ms-transform:rotate(3deg);}50%{-ms-transform:rotate(-3deg);}100%{-ms-transform:rotate(3deg);}}
@@ -68,115 +81,75 @@ header {
  background-size: cover;
 }
 
-#header-wrapper {
- top: 1rem;
- left: 1rem;
+#header-wrapper, #social {
+ display: block;
+ top: 25rem;
  z-index: 100;
  position: fixed;
- background-color: #83D7DF;
+ background-color: transparent;
  width: 20%;
+}
+
+#header-wrapper {
+ left: 1rem;
 }
 
 #social {
- top: 1rem;
  right: 1rem;
- z-index: 100;
- width: 20%;
- position: fixed;
- background-color: #83D7DF;
- 
 }
+
 
 .main-nav, 
 .social-links {
+  display: block;
   line-height: 2rem;
   z-index: 100;
   margin: auto;
-  background-color: orange;  
+  background-color: transparent;  
 }
 
-.main-nav li, 
-.social-links li {
-    display: inline-block;
-    background-color:#13A4DB;
+.main-nav li {
+    background-color:transparent;
     padding: 15px 32px;
     text-align: center;
-    font-size: .75rem;
-    margin: 4px 2px;
+    margin: 1rem 1rem;
     cursor: pointer;
 }
-.main-nav li:hover, 
-.social-links li:hover {
-    background-color: #ACDCB0;
+
+.social-links {
+ padding: 0;
+ margin: 0 auto;
 }
+
+.main-nav a {
+    color: #E3501D;
+    text-decoration: none;
+    font-size: 250%;
+}
+
 
 .subtitle {
-  margin: 0;
-  color:red;
+  margin: 0 auto;
+  padding: 0;
+  color:#E3501D;
   text-align: center;
   font-size: 120%;
-}
 
+}
 
 .fa {
- font-size: 3rem;
+ font-size:20em;
+ text-align: center;
+ color:#E3501D;
 }
+
+
 
 /* Main Nav and Social - END */
 
 
 
 
-
-
-
-/* Footer and Bottom Nav - START */
-
-footer {
- display: inline-block;
- width: 100%;
-}
-
-footer > nav {
- bottom: 0;
-  z-index: 100;
-  position: fixed;
-  width: 100%;
-  background-color: transparent;
-}
-
-footer p {
-  color: red;
-  text-align: center;
-}
-
-
-.bottom-nav {
-bottom: 1rem;
- left: 1rem;
- z-index: 100;
- width: 20%;
- position: fixed;
-   margin: auto;
-  background-color: orange;  
-}
-.bottom-nav li {
-    display: inline-block;
-    background-color:#13A4DB;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-.bottom-nav li:hover {
-    background-color: #ACDCB0;
-}
-
-
-
-/* Navigation Bars - END */
 
 
 
@@ -187,7 +160,7 @@ bottom: 1rem;
 
 #watch {
  height: 100vh;
- background-color: yellow;
+ background-color: #87D0DA;
 }
 
 video {
@@ -206,12 +179,9 @@ video {
 /* Listen Section - START */
 
 #listen {
+ background-color:#E6C6EC;
  height: 50vh;
- background-color: purple;
-
- 
 }
-
 
 /* Listen Section - END */
 
@@ -223,27 +193,21 @@ video {
 /* About Section - START */
 
 #about {
- background-color: #F2D2DC;
+  background-color: #BFFDCE;
   height: 100vh;
   font-size:1rem;
 }
 
-
-
 #about p {
- color: darkblue;
+ color: #4980B9;
  margin: 0 33rem 0 33rem;
- background-color: yellowgreen;
+ background-color: transparent;
 }
-
-
 
 .lead {
- font-size: 3rem;
+ font-size: 1.75rem;
  padding-bottom: 1rem;
 }
-
-
 
 .weybec-people img {
  padding: 2rem;
@@ -256,15 +220,62 @@ video {
 
 
 
+/* Footer and Bottom Nav - START */
 
-
-/* Social Links - START */
-
-aside {
- top: 1rem;
- right: 1rem;
- z-index: 100;
- position: fixed;
- width: 25%;
- background-color: burlywood;
+footer {
+ display: inline-block;
+ width: 100%;
 }
+
+
+
+footer p {
+  text-align: center;
+  bottom: 3rem;
+}
+
+.bottom-nav {
+ margin: auto;
+ text-align: center;
+}
+
+
+/* Navigation Bars - END */
+
+
+/* Flashing Button Section - START */
+
+@keyframes glowing {
+  0% { background-color: #D0FE6C; box-shadow: 0 0 3px #D0FE6C; }
+  50% { background-color: #82D972; box-shadow: 0 0 10px #82D972; }
+  100% { background-color: #D0FE6C; box-shadow: 0 0 3px #D0FE6C; }
+}
+
+.button {
+  background-color: #89D569;
+  -webkit-border-radius: 10px;
+  border-radius: 7px;
+  border: none;
+  color: #DD5B42;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  animation: glowing 1500ms infinite;
+}
+
+.button-download {
+ margin: 2 auto;
+ display: inline-block;
+}
+
+.button-nav__main {
+ display: block;
+}
+
+/* Flashing Button Section - END */
+
+
+
+

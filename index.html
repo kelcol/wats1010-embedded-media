@@ -9,7 +9,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='https://fonts.googleapis.com/css?family=Alike Angular' rel='stylesheet'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <!-- TODO: Make a favicon that better represents the page. -->
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="stylesheet" href="css/main.css">
     </head>
@@ -17,21 +16,14 @@
     <body>
 
         <header>
-            <!-- TODO: Create an elegant header using either one of the images
-                 or the video loop included in this repository. Make sure the
-                 page navigation is presented clearly and in a user-friendly
-                 way. Also, be sure to choose the proper image format as you
-                 insert backgrounds and other images into the page. Balance
-                 image quality with file size to achieve the best user
-                 experience. -->
         <div id="header-wrapper">
             <h1>Monkaa</h1>
             <p class="subtitle">An open source short film</p>
             <nav>
                 <ul class="main-nav">
-                    <li><a href="index.html#watch">Watch</a></li>
-                    <li><a href="index.html#listen">Listen</a></li>
-                    <li><a href="index.html#about">About</a></li>
+                    <li><a class="button button-nav__main" href="index.html#watch">Watch</a></li>
+                    <li><a class="button button-nav__main" href="index.html#listen">Listen</a></li>
+                    <li><a class="button button-nav__main" href="index.html#about">About</a></li>
                 </ul>
             </nav>
         </div>
@@ -40,9 +32,9 @@
     <aside id="social">
         <h2>Share</h2>
         <ul class="fa social-links" >
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook button"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter button"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram button"></i></a></li>
          </ul>
   </aside>
             
@@ -55,26 +47,21 @@
             <a name="watch" id="watch">
                 <h2>Watch</h2>
             </a>
-            <!-- TODO: Embed the .webm and .mp4 video with full controls for a
-                 convenient and attractive video viewing experience. -->
 
-            <video src="media/video/monkaa_1080p.webm" type="video/mp4"
-                poster="/img/monkaa_bluemonkey.png"
+            <video src="media/video/monkaa_1080p.webm" type="video/wbm"
+                poster="/media/video/video_poster.png"
                 width="50%" height="auto"
                 preload
                 controls
                 loop>
-      
             </video>
-            
-
             <!-- TODO: Style an elegant download link to download the video. -->
             <h3>Download the video</h3>
             <p>
                 Click below to download either MP4 or WEBM versions of this video.
                 <br>
-                <a class="download-button" href="media/video/monkaa_1080p.mp4">.MP4 Version</a>
-                <a class="download-button" href="media/video/monkaa_1080p.webm">.WEBM Version</a>
+                <a class="button button-download" href="media/video/monkaa_1080p.mp4">.MP4 Version</a>
+                <a class="button button-download" href="media/video/monkaa_1080p.webm">.WEBM Version</a>
             </p>
         </section>
 
@@ -99,8 +86,8 @@
             <p>
                 Click below to download either MPG or OGG versions of this audio.
                 <br>
-                <a class="download-button" href="/media/audio/monkaa_soundtrack.mp3">.MP3 Version</a>
-                <a class="download-button" href="/media/audio/monkaa_soundtrack.ogg">OGG Version</a>
+                <a class="button button-download" href="/media/audio/monkaa_soundtrack.mp3">.MP3 Version</a>
+                <a class="button button-download" href="/media/audio/monkaa_soundtrack.ogg">OGG Version</a>
             </p>
         </section>
 
@@ -109,18 +96,12 @@
 <!-- About Section - START -->
 
         <section id="about">
-            <!-- TODO: Style this text so it is comfortable to read and nice
-                 to look at. Style the "lead" paragraph to be more eye-catching
-                 so that text stands out. -->
             <a name="about" id="about">
                 <h2>About</h2>
             </a>
             <p class="lead">Monkaa is a blue-furred, pink-faced monkey who consumes a crystallized meteorite, making him invincibly strong and too hot to handle. Exploring his new superpowers, Monkaa zooms through an entire universe. </p>
 
             <ul class="weybec-people">
-                <!-- TODO: You must choose the proper image format to use for
-                     each headshot below. Images are located in the
-                     ``img/weybec/`` directory. -->
                 <li>
                     <img class="headshot" src="img/weybec/pratik_solanki.jpg" alt="Pratik Solanki headshot"><br>
                     Pratik Solanki<br>
@@ -138,7 +119,7 @@
                 </li>
             </ul>
 
-            ::<p>Monkaa is produced by <a href="http://www.weybec.com/">Weybec</a>, an animation studio located in Mumbai, India and founded by Pratik Solanki, Nita Ravalji and Niyal Parmar.</p>
+            <p>Monkaa is produced by <a href="http://www.weybec.com/">Weybec</a>, an animation studio located in Mumbai, India and founded by Pratik Solanki, Nita Ravalji and Niyal Parmar.</p>
 
             <p>Project Monkaa is a 5-minute short animated movie, entirely made with Blender and GIMP and other Free/Open Software programs. It has been released as an Open Movie, with all production files and tutorials available on <a href="https://cloud.blender.org/open-movie/monkaa/">Blender Cloud</a> under a CC-BY license, as well as on a DVD available in the <a href="http://www.blender3d.org/e-shop/">Blender Store</a>.</p>
         </section>
@@ -150,9 +131,9 @@
             <p>This page was created and designed by WEBDEV BEV in 2015. <i>Monkaa</i> was created by <a href="http://www.weybec.com/">Weybec</a> and is used here under a CC-BY license.</p>
             <nav>
                 <ul class="bottom-nav">
-                    <li><a href="#watch">Watch</a></li>
-                    <li><a href="#listen">Listen</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a class="button" href="#watch">Watch</a></li>
+                    <li><a class="button" href="#listen">Listen</a></li>
+                    <li><a class="button" href="#about">About</a></li>
                 </ul>
             </nav>
         </footer>
@@ -166,6 +147,7 @@
         https://medium.com/@ckor/make-full-screen-sections-with-1-line-of-css-b82227c75cbd
     Embedding audio
         https://www.w3schools.com/html/html5_audio.asp
+    Adding branded icons
     -->
 
 </html>
