@@ -27,10 +27,7 @@ section {
 
 
 li {
- margin: 0 auto;
- list-style: none;
- display: inline-block;
- text-align: center;
+list-style: none;
 }
 
 
@@ -50,7 +47,6 @@ h1 {
 h2 {
  color: #E3501D;
  font-size: 300%;
- text-align: center;
 }
 
 
@@ -81,12 +77,11 @@ header {
  background-size: cover;
 }
 
-#header-wrapper, #social {
+#header-wrapper {
  display: block;
  top: 25rem;
  z-index: 100;
  position: fixed;
- background-color: transparent;
  width: 20%;
 }
 
@@ -94,13 +89,8 @@ header {
  left: 1rem;
 }
 
-#social {
- right: 1rem;
-}
 
-
-.main-nav, 
-.social-links {
+.main-nav {
   display: block;
   line-height: 2rem;
   z-index: 100;
@@ -116,17 +106,11 @@ header {
     cursor: pointer;
 }
 
-.social-links {
- padding: 0;
- margin: 0 auto;
-}
-
 .main-nav a {
     color: #E3501D;
     text-decoration: none;
     font-size: 250%;
 }
-
 
 .subtitle {
   margin: 0 auto;
@@ -136,12 +120,60 @@ header {
   font-size: 120%;
 
 }
+#social {
+ width:10%;
+ top: 28rem;
+ right:-5rem;
+ z-index: 100;
+ position: fixed;
+ background-color: burlywood;
+  background-repeat: no-repeat;
+ background-position: center center;
+ background-size: cover;
+ transition: 2s width;
+}
+
+#social h2 {
+ margin: 0 auto;
+ text-align: left;
+}
+
+i {
+  margin-bottom: 1rem;
+  text-align: right;
+
+}
+
+
+
+#social:hover {
+ width: 15%;
+}
+
+#social ul {
+  margin:0;
+  padding: 0;
+  list-style: none;
+
+}
+
+#social li {
+   text-align:right;
+   margin:0;
+  padding: 0;
+  right: -10rem;
+}
+ 
+
 
 .fa {
- font-size:20em;
- text-align: center;
  color:#E3501D;
+
 }
+
+
+
+
 
 
 
@@ -198,6 +230,9 @@ video {
   font-size:1rem;
 }
 
+#about > li { 
+ display: block;
+
 #about p {
  color: #4980B9;
  margin: 0 33rem 0 33rem;
@@ -225,13 +260,14 @@ video {
 footer {
  display: inline-block;
  width: 100%;
+ bottom: 3rem;
 }
 
 
 
 footer p {
   text-align: center;
-  bottom: 3rem;
+
 }
 
 .bottom-nav {

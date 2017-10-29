@@ -48,13 +48,16 @@
                 <h2>Watch</h2>
             </a>
 
-            <video src="media/video/monkaa_1080p.webm" type="video/wbm"
-                poster="/media/video/video_poster.png"
-                width="50%" height="auto"
-                preload
-                controls
-                loop>
+            <video controls>
+                <source src="media/video/monkaa_1080p.webm" type="video/wbm"
+                    poster="/media/video/video_poster.png"
+                    width="50%" height="auto" />
+                <source src="media/video/monkaa_1080p.mp4" type="video/mp4"
+                    poster="/media/video/video_poster.png"
+                    width="50%" height="auto" />
             </video>
+
+  
             <!-- TODO: Style an elegant download link to download the video. -->
             <h3>Download the video</h3>
             <p>
