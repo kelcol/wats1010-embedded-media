@@ -27,7 +27,10 @@ section {
 
 
 li {
-list-style: none;
+ margin: 0 auto;
+ list-style: none;
+ display: inline-block;
+ text-align: center;
 }
 
 
@@ -47,6 +50,7 @@ h1 {
 h2 {
  color: #E3501D;
  font-size: 300%;
+ text-align: center;
 }
 
 
@@ -55,9 +59,12 @@ h3 {
   text-align: center;
 }
 
-@-ms-keyframes wiggle{0%{-ms-transform:rotate(3deg);}50%{-ms-transform:rotate(-3deg);}100%{-ms-transform:rotate(3deg);}}
-@-moz-keyframes wiggle{0%{-moz-transform:rotate(3deg);}50%{-moz-transform:rotate(-3deg);}100%{-moz-transform:rotate(3deg);}}
-@-webkit-keyframes wiggle{0%{-webkit-transform:rotate(3deg);}50%{-webkit-transform:rotate(-3deg);}100%{-webkit-transform:rotate(3deg);}}
+/* Commenting out below errors as reminder to figure out why they're errors */
+
+/*@-ms-keyframes wiggle{0%{-ms-transform:rotate(3deg);}50%{-ms-transform:rotate(-3deg);}100%{-ms-transform:rotate(3deg);}}*/
+/*@-moz-keyframes wiggle{0%{-moz-transform:rotate(3deg);}50%{-moz-transform:rotate(-3deg);}100%{-moz-transform:rotate(3deg);}}*/
+/*@-webkit-keyframes wiggle{0%{-webkit-transform:rotate(3deg);}50%{-webkit-transform:rotate(-3deg);}100%{-webkit-transform:rotate(3deg);}}*/
+
 @keyframes wiggle{0%{transform:rotate(3deg);}50%{transform:rotate(-3deg);}100%{transform:rotate(3deg);}}
 
 h1:hover, 
@@ -101,7 +108,6 @@ header {
 .main-nav li {
     background-color:transparent;
     padding: 15px 32px;
-    text-align: center;
     margin: 1rem 1rem;
     cursor: pointer;
 }
@@ -116,17 +122,18 @@ header {
   margin: 0 auto;
   padding: 0;
   color:#E3501D;
-  text-align: center;
+  text-align: left;
   font-size: 120%;
 
 }
 #social {
- width:10%;
+ display: block;
+ width:12%;
  top: 28rem;
- right:-5rem;
+ right:0rem;
  z-index: 100;
  position: fixed;
- background-color: burlywood;
+ /*background-color: burlywood;*/
   background-repeat: no-repeat;
  background-position: center center;
  background-size: cover;
@@ -135,56 +142,44 @@ header {
 
 #social h2 {
  margin: 0 auto;
- text-align: left;
+ text-align: center;
 }
 
 i {
   margin-bottom: 1rem;
   text-align: right;
-
 }
 
-
-
-#social:hover {
- width: 15%;
-}
+/*#social:hover {*/
+/* width: 25%;*/
+/*}*/
 
 #social ul {
   margin:0;
   padding: 0;
   list-style: none;
-
+  text-align: center;
 }
 
-#social li {
-   text-align:right;
-   margin:0;
-  padding: 0;
-  right: -10rem;
+.social-links li {
+  margin:0 auto;
+  padding: 1rem;
 }
- 
-
 
 .fa {
  color:#E3501D;
 
 }
 
-
-
-
-
-
-
 /* Main Nav and Social - END */
 
 
+/* MEDIA PLAYERS */
 
-
-
-
-
+.media-player {
+ width: 50%; 
+ height: auto;
+}
 
 
 
@@ -198,7 +193,6 @@ i {
 video {
   margin: 0 33rem 0 33rem;
 }
-
 
 /* WATCH SECTION - END */
 
@@ -230,9 +224,6 @@ video {
   font-size:1rem;
 }
 
-#about > li { 
- display: block;
-
 #about p {
  color: #4980B9;
  margin: 0 33rem 0 33rem;
@@ -240,13 +231,13 @@ video {
 }
 
 .lead {
- font-size: 1.75rem;
+ font-size: 2rem;
  padding-bottom: 1rem;
 }
 
 .weybec-people img {
  padding: 2rem;
- width: 16rem;
+ width: 20rem;
  height: auto;
 }
 
@@ -260,14 +251,11 @@ video {
 footer {
  display: inline-block;
  width: 100%;
- bottom: 3rem;
 }
-
-
 
 footer p {
   text-align: center;
-
+  bottom: 3rem;
 }
 
 .bottom-nav {
@@ -279,6 +267,8 @@ footer p {
 /* Navigation Bars - END */
 
 
+
+
 /* Flashing Button Section - START */
 
 @keyframes glowing {
@@ -288,6 +278,7 @@ footer p {
 }
 
 .button {
+ padding: 2px;
   background-color: #89D569;
   -webkit-border-radius: 10px;
   border-radius: 7px;
@@ -301,8 +292,8 @@ footer p {
   animation: glowing 1500ms infinite;
 }
 
-.button-download {
- margin: 2 auto;
+.button-download, .button-nav__bottom {
+ margin: 1.5em;
  display: inline-block;
 }
 
@@ -311,7 +302,3 @@ footer p {
 }
 
 /* Flashing Button Section - END */
-
-
-
-

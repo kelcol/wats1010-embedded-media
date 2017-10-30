@@ -3,11 +3,16 @@
 
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta property="og:site_name" content="Monkaa: Watch and Download the animated short film" />
+	    <meta property="og:title" content="Monkaa: Watch and Download the animated short film" />
+        <meta property="og:type" content="video.movie" />
+        <meta property="og:image" content="/img/monkaa_title.gif" />
         <title>Monkaa: Watch and Download the animated short film</title>
         <meta name="description" content="Monkaa is a blue-furred, pink-faced monkey who consumes a crystallized meteorite, making him invincibly strong and too hot to handle. Watch and download the animated short film here--for free!">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href='https://fonts.googleapis.com/css?family=Alike Angular' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Alike%20Angular' rel='stylesheet'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="stylesheet" href="css/main.css">
@@ -41,24 +46,16 @@
             
 </header>
 
-<!--- Watch Section - START ---->                 
+<!-- Watch Section - START -->                 
 
         <section id="watch">
-            <a name="watch" id="watch">
                 <h2>Watch</h2>
-            </a>
-
-            <video controls>
-                <source src="media/video/monkaa_1080p.webm" type="video/wbm"
-                    poster="/media/video/video_poster.png"
-                    width="50%" height="auto" />
-                <source src="media/video/monkaa_1080p.mp4" type="video/mp4"
-                    poster="/media/video/video_poster.png"
-                    width="50%" height="auto" />
+            <video controls poster="/media/video/video_poster.png">
+                <source src="media/video/monkaa_1080p.webm" type="video/wbm" class="media-player" />
+                <source src="media/video/monkaa_1080p.mp4" type="video/mp4" class="media-player" />
+                Your browser does not support the video tag.
             </video>
 
-  
-            <!-- TODO: Style an elegant download link to download the video. -->
             <h3>Download the video</h3>
             <p>
                 Click below to download either MP4 or WEBM versions of this video.
@@ -68,27 +65,16 @@
             </p>
         </section>
 
-<!--- Watch Section - END ---->
+<!-- Watch Section - END -->
 
 <!-- Listen Section - START -->
 
         <section id="listen">
-            <a name="listen" id="listen">
                 <h2>Listen</h2>
-            </a>
-            
-            <audio 
-                src="/media/audio/monkaa_soundtrack.mp3"
-                width="50%" height="auto"
-                preload
-                controls
-                loop>
-            </audio>
-            
+            <audio src="/media/audio/monkaa_soundtrack.mp3" class="media-player" preload controls loop ></audio>
           <h3>Download the audio</h3>
             <p>
                 Click below to download either MPG or OGG versions of this audio.
-                <br>
                 <a class="button button-download" href="/media/audio/monkaa_soundtrack.mp3">.MP3 Version</a>
                 <a class="button button-download" href="/media/audio/monkaa_soundtrack.ogg">OGG Version</a>
             </p>
@@ -96,12 +82,12 @@
 
 <!-- Listen Section - END -->
 
+
+
 <!-- About Section - START -->
 
         <section id="about">
-            <a name="about" id="about">
                 <h2>About</h2>
-            </a>
             <p class="lead">Monkaa is a blue-furred, pink-faced monkey who consumes a crystallized meteorite, making him invincibly strong and too hot to handle. Exploring his new superpowers, Monkaa zooms through an entire universe. </p>
 
             <ul class="weybec-people">
@@ -121,36 +107,25 @@
                     Co-Founder
                 </li>
             </ul>
-
             <p>Monkaa is produced by <a href="http://www.weybec.com/">Weybec</a>, an animation studio located in Mumbai, India and founded by Pratik Solanki, Nita Ravalji and Niyal Parmar.</p>
-
             <p>Project Monkaa is a 5-minute short animated movie, entirely made with Blender and GIMP and other Free/Open Software programs. It has been released as an Open Movie, with all production files and tutorials available on <a href="https://cloud.blender.org/open-movie/monkaa/">Blender Cloud</a> under a CC-BY license, as well as on a DVD available in the <a href="http://www.blender3d.org/e-shop/">Blender Store</a>.</p>
         </section>
 
-<!-- About Section - START -->
+<!-- About Section - END -->
 
 
-        <footer><!-- TODO: Style the footer appropriately. -->
-            <p>This page was created and designed by WEBDEV BEV in 2015. <i>Monkaa</i> was created by <a href="http://www.weybec.com/">Weybec</a> and is used here under a CC-BY license.</p>
+
+
+        <footer>
+            <p>This page was created and designed by Kelly Colht in 2017. <i>Monkaa</i> was created by <a href="http://www.weybec.com/">Weybec</a> and is used here under a CC-BY license.</p>
             <nav>
                 <ul class="bottom-nav">
-                    <li><a class="button" href="#watch">Watch</a></li>
-                    <li><a class="button" href="#listen">Listen</a></li>
-                    <li><a class="button" href="#about">About</a></li>
+                    <li><a class="button button-nav__bottom" href="#watch">Watch</a></li>
+                    <li><a class="button button-nav__bottom" href="#listen">Listen</a></li>
+                    <li><a class="button button-nav__bottom" href="#about">About</a></li>
                 </ul>
             </nav>
         </footer>
 
     </body>
-    
-    <!-- Resources consulted in the making of this page:
-    Making stuff wiggle
-        https://www.w3schools.com/howto/howto_css_shake_image.asp
-    Making sections take up whole screen
-        https://medium.com/@ckor/make-full-screen-sections-with-1-line-of-css-b82227c75cbd
-    Embedding audio
-        https://www.w3schools.com/html/html5_audio.asp
-    Adding branded icons
-    -->
-
 </html>
