@@ -179,6 +179,7 @@ i {
 .media-player {
  width: 50%; 
  height: auto;
+ margin: 0 auto;
 }
 
 
@@ -190,9 +191,6 @@ i {
  background-color: #87D0DA;
 }
 
-video {
-  margin: 0 33rem 0 33rem;
-}
 
 /* WATCH SECTION - END */
 
@@ -236,7 +234,6 @@ video {
 }
 
 .weybec-people img {
- padding: 2rem;
  width: 20rem;
  height: auto;
 }
